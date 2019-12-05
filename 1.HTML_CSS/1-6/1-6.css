@@ -1,0 +1,38 @@
+*{
+	width: 0;
+	height: 0;
+	box-sizing: border-box;
+}
+
+/*widthを指定しないと画像が表示されません*/
+/*body width100% error*/
+/*div class="boxes"作成、width100% error*/
+/*answer/index.html確認しましたが画像表示されません*/
+.box1{
+	width: 1270px;
+	height: 200px;
+	background-image: url(img/box1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box2{
+	width: 1270px;
+	height: 200px;
+	background-image: url(img/box2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box3{
+	width: 1270px;
+	height: 200px;
+	background-image: url(img/box3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.box4{
+	width: 1270px;
+	height: 200px;
+	background-image: url(img/box4.jpg);
+	background-size: cover;
+	background-position: center;
+}
