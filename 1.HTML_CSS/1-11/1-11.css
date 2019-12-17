@@ -36,6 +36,12 @@ header{
 	padding: 0 30px;
 	list-style: none;
 }
+.hamburger-drower{
+	display: none;
+}
+.h-unshown{
+	display: none;
+}
 
 main{
 	width: 100%;
