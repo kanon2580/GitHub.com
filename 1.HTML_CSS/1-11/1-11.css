@@ -247,6 +247,74 @@ footer{
 	nav{
 		display: none;
 	}
+	#hamburger-drawer{
+		position: relative;
+	}
+	.h-unshown{
+		display: none;
+	}
+
+	#h-open{
+		display: inline-block;
+		width: 30px;
+		height: 22px;
+		vertical-align: middle;
+		margin-top: 15px;
+	}
+
+	#h-open span,
+	#h-open span:before,
+	#h-open span:after{
+		position: absolute;
+		right: 0;
+		width: 25px;
+		height: 3px;
+		background: #FAFAFA;
+		display: block;
+		content: "";
+		cursor: pointer;
+	}
+	#h-open span:before{
+		bottom: -8px;
+	}
+	#h-open span:after{
+		bottom: -16px;
+	}
+	#h-close{
+		display: none;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		opacity: 0;
+		transition: .3s ease-in-out;
+	}
+	#h-content{
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		width: 90%;
+		max-width: 330px;
+		height: 100%;
+		background: white;
+		transition: .3s ease-in-out;
+		-webkit-transform: translateX(-105%);
+		transform: translateX(-105%);
+	}
+	#h-input:checked~#nav-close{
+		display: block;
+		opacity: .5;
+	}
+	#h-input:checked~#h-content{
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+		box-shadow: 6px 0 25px rgba(0,0,0,.15)
+	}
 
 	.mv{
 		background-image: url(img/code.png)
