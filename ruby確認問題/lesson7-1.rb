@@ -1,6 +1,3 @@
-# coding:utf-8
-STDOUT.sync = true
-
 puts "計算を始めます"
 puts "2つの値を入力してください"
 a = gets.to_i
